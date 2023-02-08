@@ -11,7 +11,7 @@ Now, support convert epub to website like [Honkit](https://github.com/honkit/hon
 Run:
 
 ```shell
-go build -o ./epub2websie cmd/epub2websie/main.go
+go build -o ./epub2website cmd/epub2website/main.go
 ```
 
 ## Generate a website
@@ -23,6 +23,11 @@ Run:
 
 ```shell
 ./epub2website -g https://cdn.jim.plus/ -e /path/to/book.epub -o /path/to/output/epub2website
+```
+or you can use resource file in this repo
+```shell
+cd /src/epub2website
+./epub2website -g ../../../src/ -e ./ebooks/raw/'Breathless_David Quammen.epub' -o ./ebooks/web/'Breathless_David Quammen.epub'
 ```
 
 ## Integration with Calibre Web
